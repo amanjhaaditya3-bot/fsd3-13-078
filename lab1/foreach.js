@@ -1,5 +1,4 @@
-// write a function to create number from 0 to 9 and print in words.
-const numbr = (a) => {
+const toWords = (a) => {
     if (a==0)
         console.log('zero');
     else if (a==1)
@@ -22,6 +21,14 @@ else if (a==9)
         console.log('nine');
 
 }
-numbr(8);
 
-// create another function that takes a number ans show in words with the help of two words function.
+const rollnum = "2503201000078";
+    const digits = String(rollnum).split("");
+    console.log (digits);
+
+    let inWords = "";
+
+    digits.forEach ((d) => {
+        inWords += " " + toWords(Number(d));
+    });
+    console.log(inWords);
