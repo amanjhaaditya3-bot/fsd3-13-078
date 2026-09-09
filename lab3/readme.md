@@ -3,6 +3,7 @@ localhost - URL
 
 ctrl+c - stop the server
 
+
 every request from client has a pair of {request,response}
 
 ## npm - node package manager
@@ -14,8 +15,44 @@ to use npm, the project must be npm project,
 to create npm projct we can use
 
 - npm init -y
-- it creates a package.json file automatically package.json holds all the information related to install packages from npm
-- update package.json, set type = 'module'
+- it creates a package.json file automatically
+package.json holds all the information related to install packages from npm
 - it also creates a folder node_modules automatically
 - node_modules holds the package/library files
 - generally we ignore the node_modules by .gitignore
+## Status Codes
+- 200 -> 0k
+- 201 -> created
+- 400 -> bad req
+- 403 -> forbidden
+- 404 -> not found
+- 500 ->internal server error
+
+
+# Content Type
+
+- text/plain
+- text/html
+- application/json
+- text/css
+
+The content type and status code can be send back to client by two ways.
+
+1. res.writeHead
+2. res.setHeader
+3. res.statusCode
+## JSON
+1. res.writeHead
+2. res.setHeader
+3. res.statusCode
+
+## JSON 
+server returns data only not html content because html content will be written by content developer. The data is in JSON format. JSON always stores data in key-value pair enclosed by curly bracket{}. Array can be stored by square bracket[]. one p-air of curly bracket od curly brancket represent one object and its properties will be seperated by comma(,). 
+```
+{id:1,
+name: 'Mobile',
+price: 25000,
+rating:4.5,
+review:200
+}
+```
