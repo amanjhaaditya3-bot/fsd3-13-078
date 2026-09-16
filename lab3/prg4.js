@@ -65,7 +65,7 @@ const server = http.createServer((req, res) => {
                 image: 'https://picsum.photos/id/10/300/300'
             }
         ];
-        res.end(JSON.stringify(items));
+        res.end(JSON.stringify(products));
     }
     else if(req.url === '/api/reviews') {
         res.end(JSON.stringify(reviews));
