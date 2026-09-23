@@ -56,3 +56,16 @@ rating:4.5,
 review:200
 }
 ```
+
+# for get request
+# GET -->
+- no parameters pass to the server when we receive all the items.
+
+# post --> 
+- to add records we pass the value from body section in JSON format of api tester (echo api).
+
+# delete --> 
+- to delete any product we pass parameter that is id of the product from url.
+
+# update -->(put/patch)
+- we pass id from url and data update from body.
