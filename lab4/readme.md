@@ -16,3 +16,16 @@
 8. add folderName/node_modules in .gitignore
 9. send method/function is used to revert back contents to the client. it may be html, json, html file, plain text.
 10. we can also add status code with status function. It can be chain with send function.
+
+
+
+Map
+this function is used to iterate any array it must return new array 
+in first syntax we have to use explicit return keyword whereas in syntax2 
+exclude number of property from any json object
+const{p1,p2,....rest}=product;
+log(rest);
+# search 
+to search any item in json array we use find method it return null on unsuccessful on and object on successful
+# syntax 
+array.find((item)=item.id===id)
